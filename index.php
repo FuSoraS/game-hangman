@@ -1,6 +1,10 @@
 <?php include('include/header.php'); ?>
 
-<body>
+<div class="body">
+    <nav class="nav">
+        <a href="index.php">Inicio</a>
+        <a href="credits.php">Creditos</a>
+    </nav>
     <main class="start">
         <h1 class="title">Adivina la palabra</h1>
         <button id="btn-start">Comenzar<i class="fa-solid fa-play"></i></button>
@@ -25,7 +29,9 @@
             <button class="btn-category"><i class="fa-solid fa-paw"></i>Animales</button>
         </div>
     </dialog>
+</div>
+<video muted autoplay loop>
+    <source src="video/bg-video.mp4" type="video/mp4">
+</video>
 
-</body>
-
-</html>
+<?php include('include/footer.php'); ?>
