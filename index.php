@@ -2,8 +2,10 @@
 
 <div class="body">
     <nav class="nav">
-        <a href="index.php">Inicio</a>
-        <a href="credits.php">Creditos</a>
+        <ul>
+            <li><a href="index.php">Inicio</a></li>
+            <li><a href="credits.php">Creditos</a></li>
+        </ul>
     </nav>
     <main class="start">
         <h1 class="title">Adivina la palabra</h1>
