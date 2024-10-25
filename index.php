@@ -8,7 +8,7 @@
         </ul>
     </nav>
     <main class="start">
-        <h1 class="title">Adivina la palabra</h1>
+        <h1 class="title">El ahorcado</h1>
         <button id="btn-start">Comenzar<i class="fa-solid fa-play"></i></button>
     </main>
     <dialog id="modal-credential" class="modal">
@@ -33,7 +33,7 @@
     </dialog>
 </div>
 <video muted autoplay loop>
-    <source src="assets/video/bg-video.mp4" type="video/mp4">
+    <source src="assets/video/bg-fire.mp4" type="video/mp4">
 </video>
 
 <?php include('include/footer.php'); ?>
