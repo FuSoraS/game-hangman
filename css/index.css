@@ -32,7 +32,56 @@
         }
 
     }
-
+    & .modal {
+        border: none;
+        min-width: 400px;
+        border-radius: 15px;
+        background: 
+        linear-gradient(#09f, #fff);
+    
+        &::backdrop {
+            background-color: rgba(99, 98, 98, 0.9);
+        }
+    
+        & .modal__content {
+            & .modal__text {
+                & i {
+                    margin-right: 10px;
+                }
+            }
+            
+            & .btn-category {
+                font-size: 18px;
+                padding: 6px 15px;
+                background-color: #98cfd3;
+                filter: brightness(1.0);
+                transition: filter 0.3s ease, transform 0.3s ease;
+                margin: 0 5px;
+            
+                & i {
+                    margin-right: 10px;
+                }
+            
+                &:hover {
+                    filter: brightness(1.2);
+                    transform: scale(1.1);
+                }
+            }
+            & .btn {
+                border-radius: 20px;
+            }
+            & #login-error-message {
+                display: block;
+                margin: 20px 0;
+            }
+            & .modal__btn-submit{
+                background-color: #000;
+                color: #fff;
+                padding: 4px 12px;
+            }
+        }
+    
+    }
     & .start {
         margin: auto;
         display: flex;
@@ -54,7 +103,7 @@
             font-size: 18px;
             padding: 7px 20px;
             border-radius: 20px;
-            background-image: linear-gradient(150deg, #9500ff, #09f, #00DDff);
+            background-image: linear-gradient(150deg, #004080, #09f, #00DDff);
             color: #fff;
             transition: transform 0.3s ease;
             border: none;
@@ -70,54 +119,6 @@
         }
     }
 }
-
-.modal {
-    border: none;
-    min-width: 400px;
-    border-radius: 15px;
-
-    &::backdrop {
-        background-color: rgba(99, 98, 98, 0.9);
-    }
-
-    &.modal__btn-submit {
-        background-color: #000;
-        color: #fff;
-        padding: 4px 12px;
-    }
-
-}
-
-.modal__text {
-    & i {
-        margin-right: 10px;
-    }
-}
-
-.btn-category {
-    font-size: 18px;
-    padding: 6px 15px;
-    border-radius: 20px;
-    background-color: #98cfd3;
-    filter: brightness(1.0);
-    transition: filter 0.3s ease, transform 0.3s ease;
-    margin: 0 5px;
-
-    & i {
-        margin-right: 10px;
-    }
-
-    &:hover {
-        filter: brightness(1.2);
-        transform: scale(1.1);
-    }
-}
-
-#error-message {
-    display: block;
-    margin: 20px 0;
-}
-
 video {
     position: absolute;
     top: 0;

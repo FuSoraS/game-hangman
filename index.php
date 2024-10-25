@@ -18,17 +18,17 @@
             <input type="text" id="input-name">
             <p class="modal__text"><i class="fa-solid fa-lock"></i>Ingrese su contraseña</p>
             <input type="password" id="input-password">
-            <span id="error-message"></span>
-            <button class="modal__btn-submit">Enviar</button>
+            <span id="login-error-message"></span>
+            <button class="btn modal__btn-submit">Enviar</button>
         </div>
     </dialog>
 
     <dialog id="modal-category" class="modal">
         <div class="modal__content">
             <h2 class="modal__title">Elija la categoría</h2>
-            <button class="btn-category"><i class="fa-solid fa-lemon"></i>Frutas</button>
-            <button class="btn-category"><i class="fa-solid fa-carrot"></i>Verduras</button>
-            <button class="btn-category"><i class="fa-solid fa-paw"></i>Animales</button>
+            <button class="btn btn-category"><i class="fa-solid fa-lemon"></i>Frutas</button>
+            <button class="btn btn-category"><i class="fa-solid fa-carrot"></i>Verduras</button>
+            <button class="btn btn-category"><i class="fa-solid fa-paw"></i>Animales</button>
         </div>
     </dialog>
 </div>
