@@ -1,12 +1,11 @@
-<?php include('include/header.php'); ?>
+<?php 
+$additionalCss = "css/index.css";
+$titlePage = "Inicio";
+include('include/header.php');
+?>
 
-<div class="body">
-    <nav class="nav">
-        <ul>
-            <li><a href="index.php">Inicio</a></li>
-            <li><a href="content/credits.php">Créditos</a></li>
-        </ul>
-    </nav>
+<?php include('include/nav.php'); ?>
+<div class="index-body">
     <main class="start">
         <h1 class="title">El ahorcado</h1>
         <button id="btn-start">Comenzar<i class="fa-solid fa-play"></i></button>

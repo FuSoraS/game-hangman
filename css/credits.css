@@ -1,0 +1,7 @@
+.credits-body {
+    text-align: center;
+
+    & a {
+        color: #31beb3;
+    }
+}
