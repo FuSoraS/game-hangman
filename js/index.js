@@ -1,12 +1,14 @@
-const btnStart = document.getElementById('btn-start');
 const modalCredential = document.getElementById('modal-credential');
-const btnSubmit = document.querySelector('.modal__btn-submit');
 
-btnStart.addEventListener('click', () => {
+document.getElementById('btn-start').addEventListener('click', () => {
     modalCredential.showModal();
 });
 
-btnSubmit.addEventListener('click', () => {
+document.getElementById("register").addEventListener("submit", function(event) {
+    event.preventDefault();
+});
+
+document.querySelector('.modal__btn-submit').addEventListener('click', () => {
     const inputName = document.getElementById('input-name').value;
     const inputPassword = document.getElementById('input-password').value;
 

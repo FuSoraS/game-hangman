@@ -4,7 +4,7 @@
     <nav class="nav">
         <ul>
             <li><a href="index.php">Inicio</a></li>
-            <li><a href="content/credits.php">Creditos</a></li>
+            <li><a href="content/credits.php">Créditos</a></li>
         </ul>
     </nav>
     <main class="start">
@@ -12,15 +12,15 @@
         <button id="btn-start">Comenzar<i class="fa-solid fa-play"></i></button>
     </main>
     <dialog id="modal-credential" class="modal">
-        <div class="modal__content">
-            <h2 class="modal__title">Crear credenciales</h2>
+        <form id="register" class="modal__content">
+            <h2 class="modal__title">Registrarse</h2>
             <p class="modal__text"><i class="fa-solid fa-user"></i>Ingrese su nombre</p>
             <input type="text" id="input-name">
             <p class="modal__text"><i class="fa-solid fa-lock"></i>Ingrese su contraseña</p>
             <input type="password" id="input-password">
             <span id="login-error-message"></span>
-            <button class="btn modal__btn-submit">Enviar</button>
-        </div>
+            <button class="btn modal__btn-submit">Guardar</button>
+        </form>
     </dialog>
 
     <dialog id="modal-category" class="modal">
@@ -32,7 +32,7 @@
         </div>
     </dialog>
 </div>
-<video muted autoplay loop>
+<video muted autoplay loop class="video-bg-fire">
     <source src="assets/video/bg-fire.mp4" type="video/mp4">
 </video>
 
