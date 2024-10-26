@@ -1,6 +1,11 @@
+const sound = new Audio('assets/audio/btn-start.mp3');
+
+const btnStart = document.getElementById('btn-start');
+
 const modalCredential = document.getElementById('modal-credential');
 
-document.getElementById('btn-start').addEventListener('click', () => {
+btnStart.addEventListener('click', () => {
+    sound.play();
     modalCredential.showModal();
 });
 
