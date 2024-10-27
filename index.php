@@ -14,11 +14,11 @@ include('include/header.php');
         <form id="register" class="modal__content">
             <h2 class="modal__title">Registrarse</h2>
             <p class="modal__text"><i class="fa-solid fa-user"></i>Ingrese su nombre</p>
-            <input type="text" id="input-name">
+            <input type="text" id="input-name" class="input-register">
             <p class="modal__text"><i class="fa-solid fa-lock"></i>Ingrese su contraseña</p>
-            <input type="password" id="input-password">
+            <input type="password" id="input-password" class="input-register">
             <span id="login-error-message"></span>
-            <button class="btn modal__btn-submit">Guardar</button>
+            <button class="btn modal__btn-submit btn-save">Guardar</button>
         </form>
     </dialog>
 

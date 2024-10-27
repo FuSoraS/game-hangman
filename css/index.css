@@ -1,3 +1,7 @@
+:root {
+    --red: #ff4d4d;
+}
+
 .index-body {
     position: relative;
     z-index: 2;
@@ -6,20 +10,26 @@
         border: none;
         min-width: 400px;
         border-radius: 15px;
-        background: 
-        linear-gradient(#ff9999, #fff);
-    
+        background: linear-gradient(#ff9999, #fff);
+
         &::backdrop {
             background-color: rgba(99, 98, 98, 0.9);
         }
-    
+
         & .modal__content {
+            font-size: 1.3em;
+
             & .modal__text {
                 & i {
                     margin-right: 10px;
                 }
             }
-            
+
+            & .input-register {
+                font-size: 0.7em;
+                padding: 0.5em 0.4em;
+            }
+
             & .btn-category {
                 font-size: 18px;
                 padding: 6px 15px;
@@ -27,31 +37,69 @@
                 filter: brightness(1.0);
                 transition: filter 0.3s ease, transform 0.3s ease;
                 margin: 0 5px;
-            
+
                 & i {
                     margin-right: 10px;
                 }
-            
+
                 &:hover {
                     filter: brightness(1.2);
                     transform: scale(1.1);
                 }
             }
+
             & .btn {
                 border-radius: 20px;
             }
+
             & #login-error-message {
                 display: block;
                 margin: 20px 0;
             }
-            & .modal__btn-submit{
-                background-color: #000;
-                color: #fff;
-                padding: 4px 12px;
+
+            /* From Uiverse.io by nikk7007 */
+            & .btn-save {
+                padding: 0.5em 1.2em;
+                border: 2px solid var(--red);
+                position: relative;
+                overflow: hidden;
+                background-color: transparent;
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 16px;
+                transition: .3s;
+                z-index: 1;
+                font-family: inherit;
+                color: var(--red);
+                border-radius: 20px;
+
+                &::before {
+                    content: '';
+                    width: 0;
+                    height: 300%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%) rotate(45deg);
+                    background: var(--red);
+                    transition: .5s ease;
+                    display: block;
+                    z-index: -1;
+                }
+
+                &:hover::before {
+                    width: 105%;
+                }
+
+                &:hover {
+                    color: #111;
+                }
             }
+
         }
-    
+
     }
+
     & .start {
         margin: auto;
         display: flex;
@@ -89,6 +137,7 @@
         }
     }
 }
+
 .video-bg-fire {
     position: absolute;
     top: 0;
